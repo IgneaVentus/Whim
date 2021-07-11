@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Whim</title>
+        <link href="./CSS/bootstrap.min.css" rel="stylesheet">
+        <script src="./JS/popper.min.js"></script>
+        <script src="./JS/jquery.min.js"></script>
+        <script src="./JS/bootstrap.min.js"></script>
+    </head>
+    <body onload="fillbody()">
+        <div id="#here"></div>
+        <script>
+            function fillbody() {
+                $.ajax({url:"./Controllers/Main.php?data='fetchall|article", success: function (result) {
+                    $("#here").html=result;
+                }});
+            }
+        </script>
+    </body>
+</html>

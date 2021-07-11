@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Whim\\":".",
+            "Whim\\Controllers\\":"Controllers/",
+            "Whim\\Models\\":"Models/",
+            "Whim\\Views\\":"Views/"
+        }
+    }
+}
